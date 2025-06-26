@@ -5,11 +5,11 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3001:3000"
+      - "3001:3001"
     volumes:
       - ./zalo_data:/app/data
     environment:
-      - PORT=3000
+      - PORT=3001
       - MESSAGE_WEBHOOK_URL=${MESSAGE_WEBHOOK_URL}
       - GROUP_EVENT_WEBHOOK_URL=${GROUP_EVENT_WEBHOOK_URL}
       - REACTION_WEBHOOK_URL=${REACTION_WEBHOOK_URL}
